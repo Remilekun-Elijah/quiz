@@ -12,7 +12,7 @@ environment.development = {
   authProps: ["g/token", "g/user"],
   backendUrl: "http://localhost:9000/v1",
   routes,
-  frontendUrl: "https://quizshore.vercel.app/",
+  frontendUrl: "http://localhost:5173/",
 };
 
 environment.staging = {
@@ -26,9 +26,9 @@ environment.production = {
   // appUser: import.meta.env.VITE_APP_USER,
   authProps: ["g/token", "g/user"],
   // backendUrl: "https://api.giftshores.com/v1/",
-  backendUrl: "https://fine-gray-dog-gown.cyclic.app/v1/",
+  backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
-  frontendUrl: "https://www.giftshores.com/",
+  frontendUrl: "https://quizshore.vercel.app/",
 };
 
 const env = environment[import.meta.env.MODE];
