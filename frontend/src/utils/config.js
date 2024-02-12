@@ -9,19 +9,17 @@ const routes = {
 };
 
 environment.development = {
-  // appUser: import.meta.env.VITE_APP_USER || "admin",
   authProps: ["g/token", "g/user"],
   backendUrl: "http://localhost:9000/v1",
-  // backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
-  frontendUrl: "https://quiz-jade-omega.vercel.app/",
+  frontendUrl: "https://quizshore.vercel.app/",
 };
 
 environment.staging = {
   authProps: ["g/token", "g/user"],
   backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
-  frontendUrl: "https://quiz-jade-omega.vercel.app/",
+  frontendUrl: "https://quizshore.vercel.app/",
 };
 
 environment.production = {
