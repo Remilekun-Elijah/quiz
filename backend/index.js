@@ -1,8 +1,7 @@
 const express = require("express"),
   app = express();
 
-const json2xls = require("json2xls"),
-  cors = require("cors"),
+const cors = require("cors"),
   apiVersion = "/v1",
   route = require("./routes/index"),
   mongoose = require("mongoose"),
@@ -32,8 +31,6 @@ app.get("/", (req, res, next) => {
     success: true,
   });
 });
-
-app.use(json2xls.middleware);
 app.use(apiVersion, route);
 
 app.use("*", (req, res, next) => {
