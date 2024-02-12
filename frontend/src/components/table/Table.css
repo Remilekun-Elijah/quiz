@@ -1,0 +1,66 @@
+thead tr {
+  background: var(--C_white);
+  height: 50px;
+  z-index: 99;
+}
+
+tbody tr {
+  background: var(--C_white);
+}
+
+thead th {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--C_black);
+  text-transform: capitalize;
+
+}
+
+.td {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  margin-top: 10px;
+  padding-left: 13px;
+  /* height: 60px; */
+  color: var(--C_black_lite);
+  z-index: 30;
+}
+
+.td button {
+  height: 100%;
+  /* width: 100%; */
+}
+
+tbody tr {
+  z-index: 60 !important;
+
+}
+
+table tbody .icon {
+  font-size: 16px;
+  color: #85888c;
+  z-index: 30;
+}
+
+table tbody .icon:hover {
+  cursor: pointer;
+  color: var(--C_black);
+  z-index: 30;
+
+}
+
+tbody td a svg path {
+  z-index: 99 !important
+}
+
+tbody td a svg {
+  z-index: 99 !important
+}
+
+tbody td {
+  z-index: 99 !important
+}

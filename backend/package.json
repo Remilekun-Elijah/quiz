@@ -1,0 +1,39 @@
+{
+  "name": "giftshores",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Remilekun-Elijah/giftshores.git"
+  },
+  "author": "Remilekun-Elijah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Remilekun-Elijah/giftshores/issues"
+  },
+  "homepage": "https://github.com/Remilekun-Elijah/giftshores#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.11.0",
+    "json2xls": "^0.1.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.1",
+    "mongoose-find-by-reference": "^1.0.6",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": "18.16.0",
+    "npm": "9.5.1"
+  }
+}
