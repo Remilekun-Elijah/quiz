@@ -26,7 +26,7 @@ app.use(cors("*"));
 
 app.get("/", (req, res, next) => {
   res.json({
-    name: "Giftshores Service",
+    name: "Quiz Service",
     version: "1.0.0",
     success: true,
   });
