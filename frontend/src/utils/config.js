@@ -9,24 +9,23 @@ const routes = {
 };
 
 environment.development = {
-  appUser: import.meta.env.VITE_APP_USER || "admin",
+  // appUser: import.meta.env.VITE_APP_USER || "admin",
   authProps: ["g/token", "g/user"],
   backendUrl: "http://localhost:9000/v1",
-  // backendUrl: "https://fine-gray-dog-gown.cyclic.app/v1/",
-  // backendUrl: "https://api.giftshores.com/v1/",
+  // backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
-  frontendUrl: "https://www.giftshores.com/",
+  frontendUrl: "https://quiz-jade-omega.vercel.app/",
 };
 
 environment.staging = {
   authProps: ["g/token", "g/user"],
-  backendUrl: "https://api-giftshores.onrender.com/v1",
+  backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
-  frontendUrl: "https://www.giftshores.com/",
+  frontendUrl: "https://quiz-jade-omega.vercel.app/",
 };
 
 environment.production = {
-  appUser: import.meta.env.VITE_APP_USER,
+  // appUser: import.meta.env.VITE_APP_USER,
   authProps: ["g/token", "g/user"],
   // backendUrl: "https://api.giftshores.com/v1/",
   backendUrl: "https://fine-gray-dog-gown.cyclic.app/v1/",

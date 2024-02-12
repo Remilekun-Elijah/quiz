@@ -3,13 +3,10 @@ import Dashboard from "./Dashboard";
 import Question from "./Questions";
 import Login from "./Login";
 import Category from "./Category";
+import React from "react";
 
 const { routes } = config;
 const Pages = [
-  {
-    path: routes.home,
-    element: <Login />,
-  },
   {
     path: routes.dashboard,
     element: <Dashboard />,

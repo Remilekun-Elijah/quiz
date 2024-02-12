@@ -1,4 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
+import React from "react";
 import { useEffect } from "react";
 import HomeLayout from "../layouts/Home";
 import Box from "@mui/material/Box";
@@ -15,21 +16,18 @@ import PieChart from "../components/others/PieChart";
 import {
   getDashboardData,
   getDashboardStats,
-  getReport,
 } from "../features/dashboardSlice";
 import AreaChart from "../components/others/AreaChat";
 import ScheduleSendIcon from "@mui/icons-material/ScheduleSend";
 import SendIcon from "@mui/icons-material/Send";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ForwardToInboxIcon from "@mui/icons-material/ForwardToInbox";
-import { capitalize, getAmount } from "../utils/helper";
+import { getAmount } from "../utils/helper";
 import Storage from "../utils/storage";
 import { getCategories, getCategoryData } from "../features/categorySlice";
 
 const { routes } = config;
 export default function Dashboard() {
-  const { loading, pagination, modalLoading, reports, analytics, stats } =
+  const { loading, pagination, modalLoading, analytics, stats } =
       useSelector(getDashboardData),
     { categories } = useSelector(getCategoryData),
     navigate = useNavigate(),

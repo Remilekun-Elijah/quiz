@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken"),
   config = require("./index"),
   bcrypt = require("bcryptjs"),
-  secret = config.smtp_secret,
+  secret = "MyPrivateK3y",
   saltRounds = 10;
 
 exports.generateUserToken = (id, role) => {

@@ -2,17 +2,12 @@ import React from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import Pages from "./pages/Index";
-import config from "./utils/config";
-// import ProtectedRoutes from "./components/others/ProtectedRoutes";
-// import Home from "./pages/Home";
-// import StylishMouseMovent from "./components/others/StylishMouseMovement";
 import { Button } from "@mui/material";
-// import Dashboard from "./pages/Dashboard";
-// import GiftList from "./pages/GiftList";
+import ProtectedRoutes from "./components/others/ProtectedRoutes";
+import Login from "./pages/Login";
+import config from "./utils/config";
 
 function App() {
-  const { routes } = config;
-
   function ScrollToTop() {
     const { pathname } = useLocation();
 
@@ -27,24 +22,12 @@ function App() {
     <BrowserRouter>
       <div className="">
         <Routes>
-          {/* {config.appUser === "user" && (
-            <>
-              <Route
-                {...{
-                  path: routes.home,
-                  element: <Home />,
-                }}
-              />
-            </>
-          )} */}
-          {config.appUser === "admin" && (
-            <>
-              {Pages.map((p, i) => (
-                <Route key={i} {...p} />
-              ))}
-            </>
-          )}
-
+          <Route path={config.routes.home} element={<Login />} />
+          <Route element={<ProtectedRoutes />}>
+            {Pages.map((p, i) => (
+              <Route key={i} {...p} />
+            ))}
+          </Route>
           <Route
             path="*"
             element={
