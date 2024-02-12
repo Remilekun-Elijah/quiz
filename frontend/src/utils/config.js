@@ -23,9 +23,7 @@ environment.staging = {
 };
 
 environment.production = {
-  // appUser: import.meta.env.VITE_APP_USER,
   authProps: ["g/token", "g/user"],
-  // backendUrl: "https://api.giftshores.com/v1/",
   backendUrl: "https://api-quiz.cyclic.app/v1",
   routes,
   frontendUrl: "https://quizshore.vercel.app/",
