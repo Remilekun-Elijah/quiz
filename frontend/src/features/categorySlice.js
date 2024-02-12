@@ -159,9 +159,8 @@ export const categorySlice = createSlice({
           state.categories = payload?.data?.categories;
 
           state.pagination.total = payload?.data?.count;
-          state.pagination.length = Math.ceil(
-            payload?.data?.count / state.pagination.pageSize
-          );
+          state.pagination.length =
+            state.pagination.pageSize * state.pagination.page;
         }
       })
       .addCase(getCategories.rejected, (state) => {

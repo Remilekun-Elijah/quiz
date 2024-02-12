@@ -1,8 +1,6 @@
 /* eslint-disable no-unsafe-optional-chaining */
 /* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
-import React from "react";
-
 import Loader from "../Loader/Loader";
 import Dropdown from "../Dropdown";
 import Pagination from "./Pagination";
